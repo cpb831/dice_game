@@ -1,0 +1,10 @@
+import random
+no_start = "No"
+start_roll = ""
+while start_roll != no_start:
+    r_num = random.randrange(1, 6)
+    start_roll = input("Would you like to roll the dice? Type Yes or No: ")
+    if start_roll == "Yes":
+        print("You rolled a " + str(r_num))
+    else:
+        print("Ok. Perhaps another time!")
